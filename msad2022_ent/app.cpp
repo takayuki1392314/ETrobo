@@ -143,7 +143,7 @@ protected:
     is to determine if the angular location of the robot measured by the gyro sensor is smaller than the spedified angular value.
     angle is in degree.
 */
-class IsAngleSmaller : public BrainTree::Node {
+class IsAngleSmaller  : public BrainTree::Node {
 public:
     IsAngleSmaller(int ang) : angle(ang) {}
     Status update() override {
